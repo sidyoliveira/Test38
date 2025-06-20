@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def my_portfolio(request):
+    return HttpResponse("portfolio")
+
+
+def my_status(request):
+    return HttpResponse("status")
+
+
+def my_newspaper(request):
+    return HttpResponse("newspaper")
+
