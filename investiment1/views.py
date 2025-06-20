@@ -1,14 +1,15 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def my_portfolio(request):
-    return HttpResponse("portfolio")
+    return render(request, "investment1/my_portfolio.html")
 
 
 def my_status(request):
-    return HttpResponse("status")
+    return render(request, "investment1/my_status.html")
 
 
 def my_newspaper(request):
-    return HttpResponse("newspaper")
+    return render(request, "investment1/my_newspaper.html")
 
